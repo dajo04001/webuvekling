@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(18, 0, 36);
+    color: rgb(156, 13, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    height: 100wh;
+}
+a {text-decoration: none;}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 25px auto 50px;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+ }
+
+ header {
+     grid-area: header;
+     text-align: center;
+ }
+
+ header > h1{
+     margin: 0;
+ }
+
+ main {
+     grid-area: main;
+ }
+
+ aside {
+     grid-area: aside;
+ }
+
+ footer {
+     grid-area: footer;
+ }
